@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Treversing</title>
+    <style>
+
+   body section:nth-child(2) article div:nth-child(2) ul li:nth-child(2){
+       color: red;
+   }
+
+   body section:nth-child(3) article ul li:nth-child(3){
+       color: green;
+   }
+    </style>
+</head>
+
+<body>
+<section></section>
+<section>
+    <article>
+        <div>
+        </div>
+        <div>
+            <p>Hi there...</p>
+            <p>Hi there...</p>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+            <p>Hi there...</p>
+        </div>
+        <div>
+        </div>
+    </article>
+</section>
+<section>
+    <article>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+    </article>
+</section>
+<section></section>
+
+</body>
+</html>
