@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transistion 2</title>
+    <link rel="stylesheet" href="css/normalize%20-%20CSS%20Reset%20Library.css">
+    <style>
+        section{
+            width: 300px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            right: 250px;
+
+        }
+        section>div{
+            width: 300px;
+            height: 50px;
+            background: orange;
+            color: white;
+            box-shadow: 1px 2px 3px 4px #857a7a;
+            text-shadow: #857a7a;
+            transition: margin-left 1s;
+
+        }
+        section>div:hover{
+           margin-left: 251px;
+            transition: margin-left 2s;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div><h3>Menu One</h3></div>
+    <div><h3>Menu Two</h3></div>
+    <div><h3>Menu Three</h3></div>
+    <div><h3>Menu Four</h3></div>
+    <div><h3>Menu Five</h3></div>
+</section>
+</body>
+</html>

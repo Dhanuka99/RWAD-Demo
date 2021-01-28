@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transistion 2</title>
+    <link rel="stylesheet" href="css/normalize%20-%20CSS%20Reset%20Library.css">
+    <style>
+        body{
+            background: linear-gradient(to right,blue,lightblue);
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+       section{
+           width: 300px;
+           height: 300px;
+           background: gray;
+           border: 15px solid white;
+           border-radius: 100%;
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           border-top: 15px solid crimson;
+
+       }
+       section:hover{
+          transform: rotate(360deg);
+           transition: all 2s;
+       }
+        section:hover h2{
+            transform: rotate(-360deg);
+            transition: all 2s;
+        }
+       section h2{
+           width: max-content;
+           height: max-content;
+           color: white;
+           position: absolute;
+           right: 0;
+           left: 0;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           font-family: Cambria;
+
+       }
+    </style>
+</head>
+<body>
+<section>
+<h2>RWAD</h2>
+</section>
+</body>
+</html>
