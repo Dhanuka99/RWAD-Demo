@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Basics - CSS Combinator</title>
+      <style>
+          /*CSS Combinators*/
+          /*decendent combinator
+          adjacent combinator
+          child combinator
+          general sibings combinator*/
+/*
+          decendent combinator - select if p is a child of the section
+*/
+/*
+          section p{
+    color: green;
+    font-size: 30px;
+}
+*/
+
+         /* child combinator*/
+        /*  check p is a direct child of section*/
+section>p{
+    color: red;
+}
+          /*  check p is a direct child of div*/
+          section>div>p{
+              color: orangered;
+          }
+          section>div>div>p{
+              color: green;
+          }
+/*
+          h1 gawa thiyana h2 ekata style eka add wenawa
+*/
+/*          h1+h2{
+              color: deeppink;
+          }*/
+/*
+          h1 ta pallen inna h2 okkomata style eka add wenawa
+*/
+          h1~h2{
+              color: purple;
+          }
+    </style>
+</head>
+<body>
+
+<h1 >CSS Basics</h1>
+
+<h2>Cascading Style Sheet</h2>
+<h2>CSS Basic</h2>
+<h3>The tree ways of intergrating css with HTML</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur consequuntur debitis, dignissimos dolorem
+    eaque earum enim esse et excepturi, explicabo iusto minus nam rerum similique veniam vero! Commodi, excepturi.</p>
+
+<section>
+    <p>HI There...Are you Crazy ah...</p>
+    <p>HI There...Are you Crazy ah...</p>
+    <p>HI There...Are you Crazy ah...</p>
+    <div>
+        <p>HI There...Are you Crazy ah...</p>
+        <div>
+            <p>HI There...Are you Crazy ah...</p>
+        </div>
+    </div>
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+
+    <ul>
+        <li>list one</li>
+        <li>list two</li>
+        <li>list three</li>
+
+    </ul>
+    <h2>End Point</h2>
+</section>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Basics</title>
+
+    <style>
+/*
+        Type Selector
+*/
+p{
+    color: orange;
+    font-family: Candara;
+    font-size: 30px;
+}
+/*ID selector*/
+#first{
+    color: blue;
+    font-size: 20px;
+    font-family: Cambria;
+}
+#second{
+    color: purple;
+    font-family: "Adobe Hebrew";
+    font-size: 50px;
+}
+/*Class Selector */
+.A{
+    color: deeppink;
+
+
+}
+/*Universal Selector*/
+/**{
+    color: greenyellow;
+
+}*/
+/*Attribute selector*/
+[id]{
+    border: 1px solid black;
+}
+
+/*Psudo selector
+1-psudo class
+ 2 - psudo element*/
+h4:hover{
+    color: greenyellow;
+}
+li:first-child{
+    color: red;
+
+}
+li:last-child{
+    color: orangered;
+}
+li:nth-child(3){
+    color: green;
+}
+/*Psudo elements*/
+#psudo::first-letter{
+    font-size: 100px;
+    color: blue;
+}
+
+#psudo::first-line{
+    font-size: 50px;
+    color: green;
+    text-decoration: underline;
+}
+
+input::placeholder{
+    color: red;
+}
+h5::before{
+    content: 'Attention : ';
+}
+h5::after{
+    content: ' :)';
+}
+
+/*selection grouping*/
+
+pre,h6{
+    color: deeppink;
+    font-size: 45px;
+    font-family: Cambria;
+}
+
+
+    </style>
+</head>
+<body>
+
+<h1 >CSS Basics</h1>
+
+<h2>CSS selectors</h2>
+<h3>Besic selectors</h3>
+<ol>
+    <li>Universal selector</li>
+    <li>Type selector</li>
+    <li>Class selector</li>
+    <li>Id selector</li>
+    <li>Attribute selector</li>
+
+</ol>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur consequuntur debitis, dignissimos dolorem
+    eaque earum enim esse et excepturi, explicabo iusto minus nam rerum similique veniam vero! Commodi, excepturi.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam assumenda autem cupiditate,
+    dicta ex fugiat in inventore ipsam libero magnam maiores,
+    modi mollitia necessitatibus neque nesciunt porro quaerat voluptatum?</p>
+
+<p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet autem consectetur dolo
+    remque eveniet, ipsa iure, iusto laboriosam
+    laborum odit perspiciatis praesentium quas quia quo, rem repellendus soluta vel vero.
+</p>
+
+<p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet autem consectetur dolo
+    remque eveniet, ipsa iure, iusto laboriosam
+    laborum odit perspiciatis praesentium quas quia quo, rem repellendus soluta vel vero.
+</p>
+<hr>
+<h2 class="A">Class Selector Example</h2>
+<h2>Class Selector Example</h2>
+<h2 class="A">Class Selector Example</h2>
+<h2>Class Selector Example</h2>
+<h2 class="A">Class Selector Example</h2>
+<h2>Class Selector Example</h2>
+
+<h4>Psudo class Test</h4>
+<ol>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+</ol>
+
+<h4>Psodo element test</h4>
+
+<p id="psudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+    asperiores aut debitis dolores doloribus enim facilis
+    harum illum labore laboriosam nisi perferendis praesentium, quae
+    quas quibusdam quis sapiente, velit vero?</p>
+
+<input type="text" placeholder="First Name">
+<input type="text" placeholder="Last Name">
+<h5>CSS IS MY FAV</h5>
+
+<pre>
+    non contend
+</pre>
+<h6>free contend</h6>
+</body>
+</html>
