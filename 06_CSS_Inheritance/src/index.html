@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Inheritance</title>
+    <style>
+        section{
+            color: red;
+            font-size: 60px;
+            border: 1px solid black;
+        }
+        /*api me style eka demme section ekata misaka paragraph walata neme..eth style add wela thiyennea paragraphe ekata.. ekata
+        hethuwa thama section eke ewa child ta inherit wela nisa
+        color,font size,font family wage set ekakata thama inheri support karanea..
+hebei border kiyana eka inheri wela neee.
+border eka non-inherit property ekak ex.width,height
+        */
+      /*  section eke color eka inherit wenna ona neththan..*/
+        section p{
+            color: initial;/*meka dapu gaman inhrit reject wenawa..default color rka enawa.default thiyennea inheri kiyala*/
+        }
+    </style>
 </head>
 <body>
 <ol>
     <li>area</li>
     <li>border</li>
 </ol>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
-    excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
-    excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
-    excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
-    excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
+<section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
+        excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
+        excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
+        excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt illum optio recusandae sunt. Autem dicta dolorum,
+        excepturi fuga iste maxime molestiae nam nemo numquam optio perferendis, quam quas voluptatum?</p>
+
+</section>
+
 </body>
 </html>

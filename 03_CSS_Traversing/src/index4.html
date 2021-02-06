@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traversing 4</title>
+    <style>
+      /*  body nav:nth-child(5) body eka ethule inna child lagen ona nav kiweni child da kiyala denna ona*/
+/*      section + nav ===> section gawa inna nav
+      section ~nav ===> section eka gawa thiyana nav okkoma*/
+     section+nav ol li:last-child ol li:nth-child(3) {
+            color: red;
+            font-family: Calibri;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid consectetur cum cupiditate
+    distinctio est iusto nisi officia
+    officiis quae sed, ullam velit voluptatum? Aliquam facere hic iusto necessitatibus quas!
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid consectetur cum cupiditate
+    distinctio est iusto nisi officia
+    officiis quae sed, ullam velit voluptatum? Aliquam facere hic iusto necessitatibus quas!
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid consectetur cum cupiditate
+    distinctio est iusto nisi officia
+    officiis quae sed, ullam velit voluptatum? Aliquam facere hic iusto necessitatibus quas!
+</p>
+<section>
+    <ol>
+        <li>Parent A</li>
+        <li>Parent B</li>
+        <li>Parent C</li>
+        <li>
+            <ol>
+                <li>Child A</li>
+                <li>Child B</li>
+                <li>Child C</li>
+                <li>Child D</li>
+            </ol>
+        </li>
+    </ol>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque, dolor expedita hic
+    itaque nesciunt quos velit voluptate?
+    Atque consequuntur fugit inventore itaque laborum magni, maxime odit perspiciatis saepe voluptatum.
+</p>
+</section>
+<nav>
+    <ol>
+        <li>Parent A</li>
+        <li>Parent B</li>
+        <li>Parent C</li>
+        <li>
+            <ol>
+                <li>Child A</li>
+                <li>Child B</li>
+                <li>selected Child C</li>
+                <li>Child D</li>
+            </ol>
+        </li>
+    </ol>
+</nav>
+<nav>
+    <ol>
+        <li>Parent A</li>
+        <li>Parent B</li>
+        <li>Parent C</li>
+
+
+        <li>
+            <ol>
+                <li>Child A</li>
+                <li>Child B</li>
+                <li>Child C</li>
+                <li>Child D</li>
+            </ol>
+        </li>
+    </ol>
+</nav>
+<section>
+    <ol>
+        <li>Child A</li>
+        <li>Child B</li>
+        <li>Child C</li>
+        <li>Child D</li>
+    </ol>
+    <ol>
+        <li>Parent A</li>
+        <li>Parent B</li>
+        <li>Parent C</li>
+        <li>
+            <ol>
+                <li>Child A</li>
+                <li>Child B</li>
+                <li>Child C</li>
+                <li>Child D</li>
+            </ol>
+        </li>
+    </ol>
+</section>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid consectetur cum cupiditate
+    distinctio est iusto nisi officia
+    officiis quae sed, ullam velit voluptatum? Aliquam facere hic iusto necessitatibus quas!
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid consectetur cum cupiditate
+    distinctio est iusto nisi officia
+    officiis quae sed, ullam velit voluptatum? Aliquam facere hic iusto necessitatibus quas!
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid consectetur cum cupiditate
+    distinctio est iusto nisi officia
+    officiis quae sed, ullam velit voluptatum? Aliquam facere hic iusto necessitatibus quas!
+</p>
+</body>
+</html>
